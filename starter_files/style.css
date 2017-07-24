@@ -1,0 +1,87 @@
+/*
+    NAV ELEMENT BACKGROUND : orange
+    NAV ELEMENT HOVER      : red
+
+    BREAKPOINTS
+
+    tablet  : 600px
+    desktop : 900px
+*/
+
+/*** Default Mobile Styles ****************************/
+body{
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+}
+
+/*This makes the orange boxes and changes the font.*/
+/*nav > a {
+  padding: 20px;
+  margin: 10px;
+  font-size: 15pt;
+  color: white;
+  background-color: orange;
+  text-decoration: none;
+  border-radius: 0.2em;
+}*/
+
+/*This controls the position and spacing of the boxes.*/
+/*nav {
+  margin-left: 25%;
+  max-width: 50%;
+  display: flex;
+  justify-content: space-between;
+}*/
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*This lets the boxes grow and shrink.*/
+/*nav a {
+  flex-flow: 1;
+}*/
+
+nav a{
+    display: block;
+    padding: 20px 2%;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    background: orange;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px rgba( 0, 0, 0, 0.45 );
+    box-shadow: 0 4px 4px rgba( 0, 0, 0, 0.15 );
+}
+
+
+
+
+
+
+/**** Tablet Styles ***********************************/
+@media screen and ( min-width: 600px ){
+  nav a{
+      flex-basis: 45%;
+  }
+}
+
+
+
+
+/**** Desktop Styles ***********************************/
+@media screen and ( min-width: 900px ){
+  nav{
+      flex-wrap: nowrap;
+  }
+
+  nav a{
+      flex-basis: 20%;
+  }
+}
